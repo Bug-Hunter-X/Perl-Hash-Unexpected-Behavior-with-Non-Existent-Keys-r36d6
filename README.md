@@ -1,0 +1,3 @@
+This repository demonstrates an uncommon Perl bug related to accessing non-existent keys in a hash.  The bug arises from Perl's implicit handling of undefined hash keys. Accessing a non-existent key returns an empty string rather than undef, which can lead to logical errors if not properly handled.
+
+The `bug.pl` file showcases the problematic behavior, while `bugSolution.pl` provides a corrected version.  The solution emphasizes the importance of explicitly checking for the existence of a key before accessing its value, using `exists` or `defined`.
